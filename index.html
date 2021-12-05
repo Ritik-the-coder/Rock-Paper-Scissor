@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <section id="container">
+
+            <div id="header">
+                <div class="title">
+                    <img src="logo.svg" alt="">
+                </div>
+
+                <div class="text">
+                    <p>SCORE</p>
+                    <h1 id="score">0</h1>
+                </div>
+            </div>
+
+            <div id="content">
+
+                <div class="rock">
+                    <img src="icon-rock.svg" alt="" onclick="user('rock')">
+                </div>
+                <div class="paper">
+                    <img src="icon-paper.svg" alt="" onclick="user('paper')">
+                </div>
+                <div class="scissors">
+                    <img src="icon-scissors.svg" alt="" onclick="user('scissors')">
+                </div>
+
+            </div>
+
+            <div id="contest">
+                <div id="user">
+                    <h2>YOU PICKED</h2>
+                    <div class="userhand">
+                        <img id="userpickimg" src="icon-paper.svg" alt="">
+                    </div>
+                </div> 
+
+                <div class="refree">
+                    <div class="decision"><h2 id="result">YOU WON</h2></div>
+                    <div class="newgame" onclick="newgame()">PLAY AGAIN</div>
+                </div>
+
+                <div id="computer">
+                    <h2>COMPUTER PICKED</h2>
+                    <div class="comphand">
+                        <img id="computerpickimg" src="icon-rock.svg" alt="">
+                    </div>
+                </div> 
+
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

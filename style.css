@@ -1,0 +1,274 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom , rgb(27,48,78) , #0B0F22);
+}
+
+
+#header{
+    border: 2px solid white;
+    width: 600px;
+    margin-top: -100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.text{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+}
+.text p{
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+
+.text h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+
+}
+#content{
+    width: 300px;
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+
+.rock{
+    margin-right: 15px;
+}
+
+.paper{
+    margin-left: 15px;
+}
+#content .rock{
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.rock img{
+    background-color: white;
+    border: 10px solid red;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+#content .paper{
+    
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.paper img {
+    background-color: white;
+    padding: 25px;
+    border: 10px solid blue;
+    border-radius: 50%;
+}
+#content .scissors{
+    
+    cursor: pointer;
+    transition: 0.1s;
+
+}
+
+.scissors img{
+    background-color: white;
+    padding: 25px;
+    border: 10px solid yellow;
+    border-radius: 50%;
+}
+#content .rock:hover , #content .paper:hover , #content .scissors:hover{
+    transform: translateY(-5px);
+}
+
+#contest {
+    width: 610px;
+    /* display: flex; */
+    justify-content: space-between;
+    display: none;
+    margin-top: 25px;
+}
+
+.userhand img{
+    background-color: white;
+    padding: 25px;
+    border: 10px solid rgb(157, 255, 0);
+    border-radius: 50%;
+}
+
+.comphand img{
+    background-color: white;
+    padding: 25px;
+    border: 10px solid rgb(255, 0, 64);
+    border-radius: 50%;
+}
+#user h2 , #computer h2{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#result{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.refree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* margin-top: 60px; */
+.decision h2{
+    font-size: 2rem;
+}
+.newgame{
+    background-color: white;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.1s;
+
+}
+
+.newgame:hover{
+    background-color: rgb(187, 173, 173);
+    transform: translateY(-2px);
+}
+
+@media (max-width:610px){
+    #header{
+        max-width: 260px;
+        margin-top: -35px;
+    }
+
+    .title img{
+        max-width: 80px;
+    }
+
+    .text{
+        width: 50px;
+        height: 50px;
+    }
+
+    .text p{
+        font-size: 12px;
+    }
+
+    .text h1{
+        font-size: 1rem;
+    }
+
+    .rock img{
+        border: 7px solid red;
+        padding: 13px;
+        display: block;
+        margin: auto;
+
+    }
+    .paper img {
+        border: 7px solid blue;
+        padding: 13px;
+        display: block;
+        margin: auto;
+    
+    }
+    .scissors img{
+        border: 7px solid yellow;
+        padding: 13px;
+        display: block;
+        margin: auto;
+    
+    }
+
+    .rock{
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .paper{
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+
+    #content{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .userhand img{
+        border: 7px solid rgb(157, 255, 0);
+        padding: 13px;
+        display: block;
+        margin: auto;
+    }
+
+    .comphand img{
+        border: 7px solid rgb(255, 0, 64);
+        padding: 13px;
+        display: block;
+        margin: auto;
+    }
+
+    #contest{
+        width: 300px;
+        flex-direction: column;
+
+    }
+
+    #user h2 , #computer h2{
+        font-size: 13px;
+    }
+
+    #result{
+        font-size: 1rem;
+    }
+    .newgame{
+        padding: 5px;
+    }
+
+    .refree{
+        margin: 15px 0px;
+    }
+
+}

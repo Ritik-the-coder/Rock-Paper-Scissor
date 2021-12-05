@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        Intro to math object
+    </div>
+    <script>
+
+        let a = Math;
+        console.log(a);
+
+        Math.E        // returns Euler's number
+        Math.PI       // returns PI
+        Math.SQRT2    // returns the square root of 2
+        Math.SQRT1_2  // returns the square root of 1/2
+        Math.LN2      // returns the natural logarithm of 2
+        Math.LN10     // returns the natural logarithm of 10
+        Math.LOG2E    // returns base 2 logarithm of E
+        Math.LOG10E   // returns base 10 logarithm of E
+        //Maths functions
+
+        let x = 17.2547;
+        let y = 15;
+
+        // .round() functions rounds up the value to the nearest integer
+        console.log("Rounded values of x and y are " ,Math.round(x),Math.round(y));
+        console.log("round up using ceil " , Math.ceil(17.1));
+        console.log("Round down using floor " , Math.floor(18.9));
+        // trunc() property gives the integer value before decimal
+        console.log(Math.trunc(4.2));
+
+        // sign() returns 1 for positive 0 for null and -1 for negative
+        console.log(Math.sign(4));
+
+        // returns x to the power y
+        console.log(Math.pow(3,2))
+
+        // returns sqrt of x
+        console.log(Math.sqrt(64));
+
+        //returns positive value of a negative number
+        console.log(Math.abs(-4.8));
+
+        // returns the value of sin angle and .cos()
+        console.log(Math.sin(45*Math.PI/180));
+
+        // returns the min value in a list of arguments
+        console.log(Math.min(0,5,10,20,12));
+
+        // returns the max value in a list of arguments
+        console.log(Math.max(0,5,10,20,12));
+
+        // returns a random number between 0(inclusive) and 1(exclusive)
+        console.log(Math.random());
+
+        //returns the log of x
+        console.log(Math.log(4));
+    </script>
+</body>
+</html>
